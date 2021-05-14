@@ -1,0 +1,30 @@
+* /home/kiran99/esim-workspace/comparator_project/comparator_project.cir
+
+v1  a gnd pulse(0.0 1.0 80 0 0 80 80)
+v2  net-_u2-pad2_ gnd pulse(0.0 1.0 80 0 0 80 80)
+v3  b gnd pulse(0.0 1.0 0 0 0 40 80)
+v4  net-_u2-pad4_ gnd pulse(0.0 1.0 40 0 0 40 80)
+* u2  a net-_u2-pad2_ b net-_u2-pad4_ net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ adc_bridge_4
+r3  l gnd 100k
+r4  g gnd 100k
+r5  e gnd 100k
+* u3  net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ e g l dac_bridge_3
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ comparator
+a1 [a net-_u2-pad2_ b net-_u2-pad4_ ] [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ ] u2
+a2 [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ ] [e g l ] u3
+a3 [net-_u1-pad1_ net-_u1-pad2_ ] [net-_u1-pad3_ net-_u1-pad4_ ] [net-_u1-pad5_ ] [net-_u1-pad6_ ] [net-_u1-pad7_ ] u1
+* Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=0.0 in_high=1.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_3, NgSpice Name: dac_bridge
+.model u3 dac_bridge(out_low=0.0 out_high=1.0 out_undef=0.5 input_load=1.0e-12 t_rise=0.0001n t_fall=0.0001n ) 
+* Schematic Name:                             comparator, NgSpice Name: comparator
+.model u1 comparator(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=0 ) 
+.tran 1e-00 80e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

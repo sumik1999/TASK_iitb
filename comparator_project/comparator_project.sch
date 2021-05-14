@@ -1,0 +1,276 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:comparator_project-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pulse v1
+U 1 1 609D59F4
+P 1900 2550
+F 0 "v1" H 1700 2650 60  0000 C CNN
+F 1 "pulse" H 1700 2500 60  0000 C CNN
+F 2 "R1" H 1600 2550 60  0000 C CNN
+F 3 "" H 1900 2550 60  0000 C CNN
+	1    1900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v2
+U 1 1 609D5A6D
+P 2500 2700
+F 0 "v2" H 2300 2800 60  0000 C CNN
+F 1 "pulse" H 2300 2650 60  0000 C CNN
+F 2 "R1" H 2200 2700 60  0000 C CNN
+F 3 "" H 2500 2700 60  0000 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v3
+U 1 1 609D5A9E
+P 3150 2750
+F 0 "v3" H 2950 2850 60  0000 C CNN
+F 1 "pulse" H 2950 2700 60  0000 C CNN
+F 2 "R1" H 2850 2750 60  0000 C CNN
+F 3 "" H 3150 2750 60  0000 C CNN
+	1    3150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v4
+U 1 1 609D5ADC
+P 3750 2800
+F 0 "v4" H 3550 2900 60  0000 C CNN
+F 1 "pulse" H 3550 2750 60  0000 C CNN
+F 2 "R1" H 3450 2800 60  0000 C CNN
+F 3 "" H 3750 2800 60  0000 C CNN
+	1    3750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L adc_bridge_4 U2
+U 1 1 609D5B0E
+P 4500 2150
+F 0 "U2" H 4500 2150 60  0000 C CNN
+F 1 "adc_bridge_4" H 4500 2450 60  0000 C CNN
+F 2 "" H 4500 2150 60  0000 C CNN
+F 3 "" H 4500 2150 60  0000 C CNN
+	1    4500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L resistor R3
+U 1 1 609D5C58
+P 8500 2700
+F 0 "R3" H 8550 2830 50  0000 C CNN
+F 1 "100k" H 8550 2650 50  0000 C CNN
+F 2 "" H 8550 2680 30  0000 C CNN
+F 3 "" V 8550 2750 30  0000 C CNN
+	1    8500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R4
+U 1 1 609D5C92
+P 8800 2700
+F 0 "R4" H 8850 2830 50  0000 C CNN
+F 1 "100k" H 8850 2650 50  0000 C CNN
+F 2 "" H 8850 2680 30  0000 C CNN
+F 3 "" V 8850 2750 30  0000 C CNN
+	1    8800 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R5
+U 1 1 609D5CCB
+P 9100 2700
+F 0 "R5" H 9150 2830 50  0000 C CNN
+F 1 "100k" H 9150 2650 50  0000 C CNN
+F 2 "" H 9150 2680 30  0000 C CNN
+F 3 "" V 9150 2750 30  0000 C CNN
+	1    9100 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 609D5D62
+P 8550 3200
+F 0 "#PWR2" H 8550 2950 50  0001 C CNN
+F 1 "GND" H 8550 3050 50  0000 C CNN
+F 2 "" H 8550 3200 50  0001 C CNN
+F 3 "" H 8550 3200 50  0001 C CNN
+	1    8550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 609D5D91
+P 8850 3200
+F 0 "#PWR3" H 8850 2950 50  0001 C CNN
+F 1 "GND" H 8850 3050 50  0000 C CNN
+F 2 "" H 8850 3200 50  0001 C CNN
+F 3 "" H 8850 3200 50  0001 C CNN
+	1    8850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 609D5DC0
+P 9150 3200
+F 0 "#PWR4" H 9150 2950 50  0001 C CNN
+F 1 "GND" H 9150 3050 50  0000 C CNN
+F 2 "" H 9150 3200 50  0001 C CNN
+F 3 "" H 9150 3200 50  0001 C CNN
+	1    9150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 609D5DEF
+P 2800 3400
+F 0 "#PWR1" H 2800 3150 50  0001 C CNN
+F 1 "GND" H 2800 3250 50  0000 C CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2250 3750 2250
+Wire Wire Line
+	3750 2250 3750 2350
+Wire Wire Line
+	3950 2150 3150 2150
+Wire Wire Line
+	3150 2150 3150 2300
+Wire Wire Line
+	3950 2050 2500 2050
+Wire Wire Line
+	2500 2050 2500 2250
+Wire Wire Line
+	3950 1950 1900 1950
+Wire Wire Line
+	1900 1950 1900 2100
+Wire Wire Line
+	7200 2150 8550 2150
+Wire Wire Line
+	8550 2150 8550 2600
+Wire Wire Line
+	7200 2050 8850 2050
+Wire Wire Line
+	8850 2050 8850 2600
+Wire Wire Line
+	7200 1950 9150 1950
+Wire Wire Line
+	9150 1950 9150 2600
+Wire Wire Line
+	8550 2900 8550 3200
+Wire Wire Line
+	8850 2900 8850 3200
+Wire Wire Line
+	9150 2900 9150 3200
+Wire Wire Line
+	1900 3000 1900 3400
+Wire Wire Line
+	1900 3400 3750 3400
+Wire Wire Line
+	3750 3400 3750 3250
+Connection ~ 2800 3400
+Wire Wire Line
+	3150 3200 3150 3400
+Connection ~ 3150 3400
+Wire Wire Line
+	2500 3150 2500 3400
+Connection ~ 2500 3400
+Text GLabel 3650 1950 1    60   Input ~ 0
+a
+Text GLabel 3700 2150 1    60   Input ~ 0
+b
+Text GLabel 7800 2150 1    60   Output ~ 0
+L
+Text GLabel 7450 2050 1    60   Output ~ 0
+G
+Text GLabel 8050 1950 1    60   Output ~ 0
+E
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 609D61C5
+P 2800 3400
+F 0 "#FLG1" H 2800 3475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 3550 50  0000 C CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_bridge_3 U3
+U 1 1 609DF8C8
+P 6650 2000
+F 0 "U3" H 6650 2000 60  0000 C CNN
+F 1 "dac_bridge_3" H 6650 2150 60  0000 C CNN
+F 2 "" H 6650 2000 60  0000 C CNN
+F 3 "" H 6650 2000 60  0000 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L comparator U1
+U 1 1 609E6301
+P 2700 3850
+F 0 "U1" H 5550 5650 60  0000 C CNN
+F 1 "comparator" H 5550 5850 60  0000 C CNN
+F 2 "" H 5550 5800 60  0000 C CNN
+F 3 "" H 5550 5800 60  0000 C CNN
+	1    2700 3850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

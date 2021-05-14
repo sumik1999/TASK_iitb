@@ -1,0 +1,20 @@
+* /home/kiran99/eSim-Workspace/comparator_project/comparator_project.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Fri May 14 17:33:39 2021
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  a GND pulse		
+v2  Net-_U2-Pad2_ GND pulse		
+v3  b GND pulse		
+v4  Net-_U2-Pad4_ GND pulse		
+U2  a Net-_U2-Pad2_ b Net-_U2-Pad4_ Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ adc_bridge_4		
+R3  L GND 100k		
+R4  G GND 100k		
+R5  E GND 100k		
+U3  Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ E G L dac_bridge_3		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ comparator		
+
+.end

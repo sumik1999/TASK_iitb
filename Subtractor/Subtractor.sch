@@ -1,0 +1,282 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:Subtractor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L adc_bridge_3 U2
+U 1 1 609BB7F8
+P 4500 2100
+F 0 "U2" H 4500 2100 60  0000 C CNN
+F 1 "adc_bridge_3" H 4500 2250 60  0000 C CNN
+F 2 "" H 4500 2100 60  0000 C CNN
+F 3 "" H 4500 2100 60  0000 C CNN
+	1    4500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_bridge_2 U3
+U 1 1 609BB86D
+P 6500 2100
+F 0 "U3" H 6500 2100 60  0000 C CNN
+F 1 "dac_bridge_2" H 6550 2250 60  0000 C CNN
+F 2 "" H 6500 2100 60  0000 C CNN
+F 3 "" H 6500 2100 60  0000 C CNN
+	1    6500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v1
+U 1 1 609BB8E0
+P 1550 2550
+F 0 "v1" H 1350 2650 60  0000 C CNN
+F 1 "pulse" H 1350 2500 60  0000 C CNN
+F 2 "R1" H 1250 2550 60  0000 C CNN
+F 3 "" H 1550 2550 60  0000 C CNN
+	1    1550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v2
+U 1 1 609BB95B
+P 2300 2750
+F 0 "v2" H 2100 2850 60  0000 C CNN
+F 1 "pulse" H 2100 2700 60  0000 C CNN
+F 2 "R1" H 2000 2750 60  0000 C CNN
+F 3 "" H 2300 2750 60  0000 C CNN
+	1    2300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v3
+U 1 1 609BB9B6
+P 3050 2750
+F 0 "v3" H 2850 2850 60  0000 C CNN
+F 1 "pulse" H 2850 2700 60  0000 C CNN
+F 2 "R1" H 2750 2750 60  0000 C CNN
+F 3 "" H 3050 2750 60  0000 C CNN
+	1    3050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L resistor R1
+U 1 1 609BB9FA
+P 1850 2250
+F 0 "R1" H 1900 2380 50  0000 C CNN
+F 1 "100k" H 1900 2200 50  0000 C CNN
+F 2 "" H 1900 2230 30  0000 C CNN
+F 3 "" V 1900 2300 30  0000 C CNN
+	1    1850 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R2
+U 1 1 609BBA75
+P 2600 2350
+F 0 "R2" H 2650 2480 50  0000 C CNN
+F 1 "100k" H 2650 2300 50  0000 C CNN
+F 2 "" H 2650 2330 30  0000 C CNN
+F 3 "" V 2650 2400 30  0000 C CNN
+	1    2600 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R3
+U 1 1 609BBAC9
+P 3350 2400
+F 0 "R3" H 3400 2530 50  0000 C CNN
+F 1 "100k" H 3400 2350 50  0000 C CNN
+F 2 "" H 3400 2380 30  0000 C CNN
+F 3 "" V 3400 2450 30  0000 C CNN
+	1    3350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 609BBF9E
+P 3250 4100
+F 0 "#PWR01" H 3250 3850 50  0001 C CNN
+F 1 "GND" H 3250 3950 50  0000 C CNN
+F 2 "" H 3250 4100 50  0001 C CNN
+F 3 "" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 609BBFF3
+P 3250 4100
+F 0 "#FLG02" H 3250 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 3250 4250 50  0000 C CNN
+F 2 "" H 3250 4100 50  0001 C CNN
+F 3 "" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 2050 1    60   Input ~ 0
+A
+Text GLabel 2800 2150 1    60   Input ~ 0
+B
+Text GLabel 3550 2300 1    60   Input ~ 0
+C
+Text GLabel 7450 2050 1    60   Output ~ 0
+DIFF
+Text GLabel 7150 2150 1    60   Output ~ 0
+BORROW_OUT
+Wire Wire Line
+	1550 2050 1550 2100
+Wire Wire Line
+	1900 2050 1900 2150
+Connection ~ 1900 2050
+Wire Wire Line
+	1900 2450 1900 4100
+Wire Wire Line
+	1550 3000 1550 4100
+Wire Wire Line
+	2300 4100 2300 3200
+Connection ~ 1900 4100
+Wire Wire Line
+	2650 4100 2650 2550
+Connection ~ 2300 4100
+Wire Wire Line
+	3050 4100 3050 3200
+Connection ~ 2650 4100
+Wire Wire Line
+	3050 2300 3900 2300
+Wire Wire Line
+	3900 2300 3900 2250
+Connection ~ 3400 2300
+Wire Wire Line
+	3400 4100 3400 2600
+Connection ~ 3050 4100
+Wire Wire Line
+	2300 2150 3900 2150
+Wire Wire Line
+	2650 2150 2650 2250
+Wire Wire Line
+	2300 2150 2300 2300
+Connection ~ 2650 2150
+Wire Wire Line
+	7050 2150 7550 2150
+Wire Wire Line
+	7550 2150 7550 2450
+Wire Wire Line
+	7050 2050 7800 2050
+Wire Wire Line
+	7800 2050 7800 2600
+Wire Wire Line
+	7550 4100 7550 2750
+Connection ~ 3400 4100
+Connection ~ 7550 4100
+Wire Wire Line
+	7800 4100 7800 2900
+$Comp
+L resistor R5
+U 1 1 609BBF12
+P 7750 2700
+F 0 "R5" H 7800 2830 50  0000 C CNN
+F 1 "100k" H 7800 2650 50  0000 C CNN
+F 2 "" H 7800 2680 30  0000 C CNN
+F 3 "" V 7800 2750 30  0000 C CNN
+	1    7750 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R4
+U 1 1 609BBB15
+P 7500 2550
+F 0 "R4" H 7550 2680 50  0000 C CNN
+F 1 "100k" H 7550 2500 50  0000 C CNN
+F 2 "" H 7550 2530 30  0000 C CNN
+F 3 "" V 7550 2600 30  0000 C CNN
+	1    7500 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 609CBF69
+P 7800 4100
+F 0 "#PWR03" H 7800 3850 50  0001 C CNN
+F 1 "GND" H 7800 3950 50  0000 C CNN
+F 2 "" H 7800 4100 50  0001 C CNN
+F 3 "" H 7800 4100 50  0001 C CNN
+	1    7800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 609CBF95
+P 7550 4100
+F 0 "#PWR04" H 7550 3850 50  0001 C CNN
+F 1 "GND" H 7550 3950 50  0000 C CNN
+F 2 "" H 7550 4100 50  0001 C CNN
+F 3 "" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2050 1550 2050
+Wire Wire Line
+	1550 4100 3400 4100
+Wire Wire Line
+	2300 4100 2650 4100
+$Comp
+L my_subtractor U1
+U 1 1 609D0C07
+P 2700 3950
+F 0 "U1" H 5550 5750 60  0000 C CNN
+F 1 "my_subtractor" H 5550 5950 60  0000 C CNN
+F 2 "" H 5550 5900 60  0000 C CNN
+F 3 "" H 5550 5900 60  0000 C CNN
+	1    2700 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
